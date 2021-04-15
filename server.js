@@ -17,10 +17,20 @@ app.use(express.json());
 app.use(require("./routes/apiRoutes"));
 app.use(require("./routes/htmlRoutes"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTracker", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true 
-});
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/workoutdb',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
+
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTracker", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true 
+// });
 
 app.listen(PORT, function() {
   console.log(`Now listening on port: ${PORT}`);
