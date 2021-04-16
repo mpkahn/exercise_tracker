@@ -1,9 +1,9 @@
-#  HW 17 - Exercise Tracker 
+#  HW 17 - NoSQL Exercise Tracker 
 
 
 ## Description
 
-This web application allows users to enter and track various types of exercise information and then view their total time/weights logged and keep track of their exercises over time.
+This web application allows users to enter and track various types of exercise information and then view their total time/weights logged and keep track of their exercises over time. Mongodb is utilized to store workout information for the user and mongoAtlas is used to host this information in the cloud.
 
 ## Installation
 
