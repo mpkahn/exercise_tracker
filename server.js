@@ -27,6 +27,8 @@ mongoose.connect(
     }
   );
 
+
+// mongoose.connect(mongoose_URI)
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTracker", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true 
