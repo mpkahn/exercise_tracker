@@ -7,7 +7,6 @@ const logger = require("morgan");
 const  app = express();
 const  PORT = process.env.PORT || 3001;
 
-// enable compression middleware
 
 app.use(logger("dev"));
 app.use(express.static("public"));

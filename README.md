@@ -3,42 +3,42 @@
 
 ## Description
 
-This application is a express based tech blog that allows users to create an account and upload tech projects they are working on and post them to the main page. Anyone can view published projects, but only users can edit or delete their own projects. 
-
+This web application allows users to enter and track various types of exercise information and then view their total time/weights logged and keep track of their exercises over time.
 
 ## Installation
 
-* Navigate to https://github.com/mpkahn/techblog and clone repository to local machine.
+* Navigate to https://github.com/mpkahn/exercise_tracker and clone repository to local machine.
 
 * To run locally: 
 * Install npm (`npm i`). 
 * Install any other necessary modules
-* Ensure correct information in .env file
-* Either initialize database in mysql workbench ~or~ utilize ``mysql -u root -p`` (followed by your password)
-* Once NPM is installed, run "npm start" to launch application and go to localhost/3005 in browser
+* Create mongodb database locally using Robo-3T named "workoutdb"
+* Seed databause using `npm run seed`
+* Once NPM is installed, run "npm start" to launch application and go to localhost/3001 in browser
 
 ## Usage 
 
-* Should be hosted at https://lit-oasis-64674.herokuapp.com/
+* App hosted at https://pure-depths-98965.herokuapp.com/
 
-* On site, view projects on main page (if any)
-* Click log in at the top
-* Navigate to register new account
-* After creating account, go to "my projects" and click "new post" to create project postings
-* View projects on main page or edit them in "my projects"
-* Click on other projects to leave comments
+* On site, view curren workouts logged main page (if any)
+![main page](assets/images/img1.jpg)
+* Click New Workout
+* Enter in resistence or cardio workout information
+![workout enter page](assets/images/img2.jpg)
+* Click "add exercise" followed by "complete" when done adding information
+* View updated workout info on main page
+* Click Dashboard to view graphs of workout information
+![dashboard page](assets/images/img3.jpg)
 
 
 ## Credits
 
-* node.js and its documentation on file systems https://nodejs.org/api/fs.html & https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
-npm js, 
+* node.js and its documentation https://nodejs.org/api/fs.html 
 * Express
-* Sequelize
-* MYSQL https://dev.mysql.com/doc/refman/8.0/en/keywords.html
-* Google material theming https://material.io/design/material-theming/implementing-your-theme.html#typography
+* Mongoose
+* Mongodb
+* Mongo Atlas
 * Heroku
-* Screencastify
 
 
 ## License

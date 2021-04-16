@@ -65,7 +65,7 @@ router.get("/api/workouts", (req, res) => {
 
 router.get("/api/workouts/range", (req, res) => {
     Workout.find({})
-        //get rid of sort and add 
+      
         .limit(10)
         .then(dbWorkout => {
             res.json(dbWorkout);
